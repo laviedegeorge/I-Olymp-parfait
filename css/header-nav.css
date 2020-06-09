@@ -85,7 +85,7 @@ h1{
 }
 
 @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .9} 
     to {opacity: 1}
 }
 
@@ -120,6 +120,11 @@ nav .nav li, nav .lang li {
 
 nav .nav li.active, .counter > ul > .active {
     font-weight: bold;
+}
+
+header li a {
+  color: inherit;
+  text-decoration: none;
 }
 
 nav .lang li.active{
