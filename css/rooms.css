@@ -69,7 +69,6 @@
 	width: 80%;
 	margin: 0 auto;
 	background: #ebebeb;
-	padding: 0 5em;
 }
 
 .room-detail {
@@ -88,9 +87,22 @@
 	width: 80%;
 }
 
+.room-detail p {
+	padding: 2em;
+}
+
 .features li {
 	display: inline;
-	margin-right: 1em;
+	margin-right: 0.5em;
+	font-family: EB Garamond;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #000000;
 }
 
 .room-detail a {
@@ -99,4 +111,5 @@
 	border: 2px solid #3d3d3d;
 	padding: 0.5em;
 	color: #000;
+	margin-left: 2em;
 }
