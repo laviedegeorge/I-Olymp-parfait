@@ -20,4 +20,4 @@ const changeSlides = ()=>{
 
 setInterval(() => {
     changeSlides();
-}, 5000);
+}, 6000);
