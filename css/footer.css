@@ -1,0 +1,115 @@
+footer {
+	background: #1f1f1f;
+	height: 45vh;
+	color: #fff;
+}
+
+/*.clear {
+	clear: both;
+}*/
+
+.flex {
+	display: flex;
+}
+
+footer .wrapper {
+	height: 100%;
+	justify-content: space-around;
+}
+
+footer .wrapper > * {
+	height: 100%;
+}
+
+.first-col {
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+footer .logo {
+	text-align: center;
+}
+
+footer h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 49px;
+	color: #EBEBEB;
+	margin: 0.1em 0;
+}
+
+footer h3 {
+	font-family: Montserrat;
+	font-style: italic;
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 27px;
+	color: #E5E5E5;
+}
+footer svg {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	margin: 0 1em;
+}
+
+footer nav {
+	height: 100%;
+}
+
+footer nav ul {
+	flex-direction: column;
+	justify-content: space-around;
+	height: 80%;
+}
+
+footer a {
+	text-decoration: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F5F5F5;
+}
+
+footer a:active {
+	font-weight: bold;
+}
+
+.contact-info {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.contact-info h2 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #F5F5F5;
+	margin-bottom: 0.5em;
+}
+
+footer address {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F5F5F5;
+}
+
+.contact-info a {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+	color: #F5F5F5;
+}
