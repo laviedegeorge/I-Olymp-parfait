@@ -52,7 +52,7 @@
 .room {
 	height: 80vh;
 	align-items: center;
-	margin: 8em 0;
+	margin: 4em 0;
 	width: 90%;
 }
 
@@ -98,10 +98,9 @@
 	font-family: EB Garamond;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 28px;
-	line-height: 37px;
-
-color: #000000;
+	font-size: 22px;
+	line-height: 33px;
+	color: #000000;
 }
 
 .features li {
