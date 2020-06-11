@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 }
 
+.ul {
+	padding: 0em 0em 3em 0em;
+}
 .rooms-text h2 {
 	text-align: center;
 	font-family: EB Garamond;
@@ -18,8 +21,8 @@
 	font-family: EB Garamond;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 28px;
-	line-height: 37px;
+	font-size: 22px;
+	line-height: 30px;
 	text-align: center;
 	color: #000000;
 	width: 40%;
@@ -30,8 +33,8 @@
 	font-family: EB Garamond;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 28px;
-	line-height: 37px;
+	font-size: 20px;
+	line-height: 30px;
 	text-align: center;
 	color: #000000;
 	width: 55%;
@@ -50,35 +53,36 @@
 }
 
 .room {
-	height: 80vh;
+	/* height: 80vh; */
 	align-items: center;
-	margin: 4em 0;
-	width: 90%;
+	justify-content: center;
+	margin: 5em 0;
+	/* width: 90%; */
 }
 
-.room-detail .wrapper {
+/* .room-detail .wrapper {
 	align-items: center;
 }
-
+ */
 
 .room-detail > .wrapper {
 	flex-direction: column;
-	justify-content: space-around;
-	width: 80%;
-	margin: 0 auto;
+	/* justify-content: space-around; */
+	/* width: 80%;
+	margin: 0 auto; */
 	background: #ebebeb;
-	padding: 1em;
+	padding: 2em;
 }
 
 .room-detail {
-	height: 90%;
+	/* width: 100%; */
 	position: relative;
-	left: 7em;
+	left: 2em;
 }
 
-.room > * {
+/* .room > * {
 	width: 50%;
-}
+} */
 
 
 .room-image img {
@@ -88,19 +92,20 @@
 .room-detail h4 {
 	font-family: EB Garamond;
 	font-style: normal;
-	font-weight: bold;
+	/* font-weight: bold;
 	font-size: 28px;
-	line-height: 37px;
+	line-height: 37px; */
 	color: #161616;
 }
 .room-detail p {
-	padding: 0 1em;
+	padding: 1em 0em;
 	font-family: EB Garamond;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 22px;
-	line-height: 33px;
+	/* font-size: 22px; */
+	/* line-height: 33px; */
 	color: #000000;
+	padding: 3em 0em;
 }
 
 .features li {
@@ -109,8 +114,8 @@
 	font-family: EB Garamond;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 22px;
-	line-height: 29px;
+	font-size: 15px;
+	/* line-height: 29px; */
 	color: #000000;
 }
 
@@ -120,7 +125,7 @@
 	border: 2px solid #3d3d3d;
 	padding: 0.5em;
 	color: #000;
-	margin-left: 2em;
+	/* margin-left: 2em; */
 }
 
 li {
