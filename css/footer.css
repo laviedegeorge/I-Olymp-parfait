@@ -78,3 +78,13 @@ footer  a {
 .footer-contact > p:first-child {
 	font-weight: bold;
 }
+
+@media (max-width: 450px) {
+	footer {
+		display: block;
+	}
+
+	footer div {
+		margin: 1em 0em;
+	}
+}

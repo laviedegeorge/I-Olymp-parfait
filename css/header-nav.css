@@ -23,6 +23,10 @@ ul {
     padding: 0em 1em;
 }
 
+li {
+    cursor: pointer;
+}
+
 h1{
     width: 60%;
     font-size: lighter;
