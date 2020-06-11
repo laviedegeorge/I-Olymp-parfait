@@ -2,15 +2,11 @@
     box-sizing: border-box;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-
 body {
     margin: 0em;
     padding: 0em;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: transparent;
 }
 
 button {
@@ -22,14 +18,13 @@ button {
     border: 2px solid #ffffff;
 }
 
-button:hover {
-  color: white !important;
-  background-color: black !important;
-}
-
 ul {
     list-style: none;
     padding: 0em 1em;
+}
+
+li {
+    cursor: pointer;
 }
 
 h1{
@@ -38,36 +33,61 @@ h1{
     margin-left: 2em;
 }
 /* ------------------- CAROUSEL ----------------------------- */
-
-
-.header-room {
-    background: url("/img/image-2.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: -999;
-    background-attachment: scroll;
+.carousel .item {
+    opacity: 0;
+    transition-property: opacity;
 }
 
-.header-index {
-    background: url("/img/image-1.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: scroll;
+.carousel .active {
+    opacity: 1;
 }
 
-.header-services {
-    background: url("/img/img-3.png") no-repeat center center fixed;
+
+.item:nth-child(1) {
+    background: url("/img/image-1.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: -999;
-    background-attachment: scroll;
-} 
+}
+
+.item:nth-child(2) {
+    background: url("/img/image-2.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.item:nth-child(3) {
+    background: url(/img/img-3.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel {
+    z-index: -99;
+}
+
+.carousel, .carousel .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 1}
+}
 
 /* ---------------------HEADER --------------------------- */
 .header {
@@ -90,8 +110,6 @@ h1{
 
 nav {
     width: 70%;
-    z-index: 555;
-    height: 86px;
 }
 
 nav, nav .nav, nav .lang {
@@ -137,15 +155,15 @@ nav .lang li.active{
     width: 30px;
 }
 
-
-
 .header .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
     position: absolute;
     top: 0%;
+    z-index: -1;
 }
 
 .header h1 > p {
@@ -194,7 +212,7 @@ nav .lang li.active{
     margin: 5px;
 }
 
-@media (mmax-width: 650px) {
+@media (max-width: 768px) {
     .header header{ 
         justify-content: space-between;
         padding: 1em 2.5em;
@@ -234,14 +252,19 @@ nav .lang li.active{
     button.reserv {
         border-color: #333;
         color: #333;
+    }
+
+    .container > h1{
+        font-size: 1em;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
     .header header{ 
         justify-content: space-between;
         padding: 1em 2.5em;
     }
+
     nav {
         width: 100%;
         height: 93vh;
@@ -277,9 +300,17 @@ nav .lang li.active{
     button.reserv {
         border-color: #333;
         color: #333;
+    }
+
+    .container > h1{
+        font-size: .8em;
     }
 
     .header .gray-div {
         width: 50%;
+    }
+
+    .header .gray-div.second {
+        height: 30vh;
     }
 }

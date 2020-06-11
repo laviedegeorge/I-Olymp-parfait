@@ -1,47 +1,53 @@
-footer {
-  margin-top: 70px;
-	background: #1f1f1f;
-  color: #fff;
-  padding: 30px 10%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+.footer-nav {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: .85em;
 }
 
-.icons-socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+footer .footer-nav ul {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0;
 }
 
-
-.icons-socials h2 {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 49px;
+footer  a {
+	text-decoration: none;
+	color: #F5F5F5;
 }
 
-.icons-socials h3 {
-  font-family: Montserrat;
-  font-style: italic;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 27px;
-  margin-bottom: 30px;
+.active {
+	font-weight: bold;
 }
 
 
-
-
-footer svg {
-	width: 20px;
-	height: 20px;
-	color: #fff;
-	margin: 0 1em;
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.footer-contact > p {
+	text-align: center;
+	margin: 0;
+	line-height: 2em;
+	font-weight: lighter;
+}
+
+.footer-contact > p:first-child {
+	font-weight: bold;
+}
+
+@media (max-width: 450px) {
+	footer {
+		display: block;
+	}
+
+	footer div {
+		margin: 1em 0em;
+	}
 
 .contact-info {
   display: flex;
