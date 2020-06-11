@@ -22,6 +22,11 @@ button {
     border: 2px solid #ffffff;
 }
 
+button:hover {
+  color: white !important;
+  background-color: black !important;
+}
+
 ul {
     list-style: none;
     padding: 0em 1em;
@@ -33,61 +38,36 @@ h1{
     margin-left: 2em;
 }
 /* ------------------- CAROUSEL ----------------------------- */
-.carousel-fade .carousel-inner .item {
-    opacity: 0;
-    transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .active {
-    opacity: 1;
-}
 
 
-.item:nth-child(1) {
-    background: url("/img/image-1.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.item:nth-child(2) {
+.header-room {
     background: url("/img/image-2.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: -999;
+    background-attachment: scroll;
 }
 
-.item:nth-child(3) {
-    background: url(/img/img-3.png) no-repeat center center fixed;
+.header-index {
+    background: url("/img/image-1.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 }
 
-.carousel {
-    z-index: -99;
-}
-
-.carousel, .carousel .item {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-@keyframes fade {
-    from {opacity: .9} 
-    to {opacity: 1}
-}
+.header-services {
+    background: url("/img/img-3.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -999;
+    background-attachment: scroll;
+} 
 
 /* ---------------------HEADER --------------------------- */
 .header {
@@ -110,6 +90,8 @@ h1{
 
 nav {
     width: 70%;
+    z-index: 555;
+    height: 86px;
 }
 
 nav, nav .nav, nav .lang {
@@ -155,6 +137,8 @@ nav .lang li.active{
     width: 30px;
 }
 
+
+
 .header .container {
     height: 100vh;
     display: flex;
@@ -162,7 +146,6 @@ nav .lang li.active{
     justify-content: space-between;
     position: absolute;
     top: 0%;
-    z-index: -1;
 }
 
 .header h1 > p {
@@ -254,7 +237,7 @@ nav .lang li.active{
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
     .header header{ 
         justify-content: space-between;
         padding: 1em 2.5em;
