@@ -1,156 +1,22 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 .ul {
-	padding: 0em 0em 3em 0em;
-}
-.rooms-text h2 {
-	text-align: center;
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 30px;
-	line-height: 39px;
-	color: #161616;
-}
-
-.rooms-text h3 {
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 30px;
-	text-align: center;
-	color: #000000;
-	width: 40%;
-	margin: 1em auto;
-}
-
-.rooms-text p {
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 30px;
-	text-align: center;
-	color: #000000;
-	width: 55%;
-	margin: 0 auto;
-}
-
-.all-rooms {
-	width: 90%;
-	margin: 6em auto;
-}
-
-.room-detail,
-.room-detail > .wrapper,
-.room {
 	display: flex;
+	margin: 0em 0em 2em 0em;
+	padding: 0;
 }
 
-.room {
-	/* height: 80vh; */
-	align-items: center;
-	justify-content: center;
-	margin: 5em 0;
-	/* width: 90%; */
+.ul li {
+	font-size: .9em;
+	margin-right: 2em;
 }
 
-/* .room-detail .wrapper {
-	align-items: center;
-}
- */
-
-.room-detail > .wrapper {
-	flex-direction: column;
-	/* justify-content: space-around; */
-	/* width: 80%;
-	margin: 0 auto; */
-	background: #ebebeb;
-	padding: 2em;
+.book-btn {
+	padding: 0;
 }
 
-.room-detail {
-	/* width: 100%; */
-	position: relative;
-	left: 2em;
+.book-btn a{
+    align-self: flex-start;
+    text-decoration: none;
+    border: 2px solid #3d3d3d;
+    padding: 0.5em;
+    color: #000;
 }
-
-/* .room > * {
-	width: 50%;
-} */
-
-
-.room-image img {
-	width: 100%;
-}
-
-.room-detail h4 {
-	font-family: EB Garamond;
-	font-style: normal;
-	/* font-weight: bold;
-	font-size: 28px;
-	line-height: 37px; */
-	color: #161616;
-}
-.room-detail p {
-	padding: 1em 0em;
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: normal;
-	/* font-size: 22px; */
-	/* line-height: 33px; */
-	color: #000000;
-	padding: 3em 0em;
-}
-
-.features li {
-	display: inline;
-	margin-right: 0.5em;
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	/* line-height: 29px; */
-	color: #000000;
-}
-
-.room-detail a {
-	align-self: flex-start;
-	text-decoration: none;
-	border: 2px solid #3d3d3d;
-	padding: 0.5em;
-	color: #000;
-	/* margin-left: 2em; */
-}
-
-li {
-	list-style: none;
-	display: inline;
-}
-
-.rooms-navigation a {
-	text-decoration: none;
-	padding: 0.5em;
-	color: #000;
-	margin-left: 0.5em;
-	font-family: EB Garamond;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 37px;
-	color: #858585;
-}
-
-.rooms-navigation {
-	margin: 2em 12em;
-}
-
-.rooms-navigation a:active {
-	border: 2px solid #3d3d3d;
-}
-
